@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="/assets/twitter_5969020.png" />
   <title>Twitter</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
             </g>
           </svg>
         </div>
-
+       
         <a class="nav-link active" href="#"><i class="bi bi-house-door-fill me-2"></i>Home</a>
         <a class="nav-link" href="#"><i class="bi bi-hash me-2"></i>Explore</a>
         <a class="nav-link" href="#"><i class="bi bi-bell me-2"></i>Notifications</a>
@@ -45,23 +46,134 @@
       </nav>
 
       <!-- Main Content -->
-      <main class="col-md-7 p-4">
-        <div class="d-flex justify-content-center gap-5 border-bottom pb-3 mb-3">
-          <div class="fw-bold">For You</div>
-          <div class="text-muted">Following</div>
+      <main class="col-md-7 p-3">
+        <div class="d-flex justify-content-center gap-3 border mb-3">
+          <button class="btn-bold flex-grow-1">
+            <div class="fw-bold px-3 py-2 hover-tab text-center">For You</div>
+          </button>
+          <button class="btn-muted flex-grow-1">
+            <div class="text-muted px-3 py-2 hover-tab text-center">Following</div>
+          </button>
         </div>
-        <!-- Tweets or feed content would go here -->
+        
+        <div class="d-flex align-items-start mb-3">
+          <img src="./assets/20221114_101344.jpg" class="rounded-circle me-2" alt="profile" width="40" height="40" />  
+          <div class="flex-grow-1">
+            <textarea class="form-control border-0" rows="3" placeholder="What's happening?"></textarea>
+            
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <small class="text-muted"><i class="bi bi-globe-central-south-asia-fill"></i></small>
+              <div class="d-flex gap-2">
+                <a class="nav-link" href="#"><i class="bi bi-image me-2"></i></a>
+                <a class="nav-link" href="#"><i class="bi bi-filetype-gif me-2"></i></a>
+                <a class="nav-link" href="#"><i class="bi bi-circle me-2"></i></a>
+                <a class="nav-link" href="#"><i class="bi bi-card-checklist me-2"></i></a>
+                <a class="nav-link" href="#"><i class="bi bi-emoji-smile me-2"></i></a>
+                <a class="nav-link" href="#"><i class="bi bi-calendar-event me-2"></i></a>
+                <a class="nav-link" href="#"><i class="bi bi-geo-alt me-2"></i></a>
+              </div>
+              <button type="button" class="btn btn-primary">Post</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider mb-3">Show 70 posts</div>
+
+        <div class="tweet mb-4">
+          <div class="tweet-header">
+            <strong>Nedbank Cup Champion<i class="bi bi-patch-check-fill"></i></strong> @PortiaMoemedi · Feb 10
+          </div>
+          <p>Team effort by the boys<br/>Kaizer Chiefs.</p>
+          <p class="show-more">Show more</p>
+
+          <div class="images">
+            <img src="https://news24cobalt.24.co.za/resources/0299-1db974a8c8cd-fbbe220c116b-1000/format/inline/tl_2396090.jpeg" alt="img" />
+          </div>
+        </div>
+        
+        <div class="tweet mb-4">
+          <div class="tweet-header">
+            <strong>Gregory Issacs<i class="bi bi-patch-check-fill"></i></strong> @Lolo123 · March 23
+          </div>
+          <p>Best of Gregory<br/>Gregory Isaacs live at the Rocket.</p>
+          <p class="show-more">Show more</p>
+          <div class="images">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/a5/2c/4da52c4a-1e8d-9088-5129-e5b7ea3bcecd/00602577177675.rgb.jpg/632x632bf.webp" alt="img" />
+          </div>
+        </div>
       </main>
 
       <!-- Right Sidebar -->
-      <aside class="col-md-3 p-3">
-  <div class="input-group mb-3 rounded-pill overflow-hidden">
-    <span class="input-group-text bg-white ">
-      <i class="bi bi-search"></i>
-    </span>
-    <input type="text" class="form-control border-start-0" placeholder="Search" aria-label="Search">
-  </div>
-</aside>
+      <aside class="col-md-3 p-4">
+        <div class="input-group mb-3 rounded-pill overflow-hidden">
+          <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control border-start-0" placeholder="Search" aria-label="Search">
+        </div>
+        
+        <div class="card p-3 mb-3">
+          <h5><strong>Subscribe to Premium</strong></h5>
+          <p>Subscribe to unlock new features and, if eligible, receive a share of revenue.</p>
+          <button class="btn btn-primary btn-sm">Subscribe</button>
+        </div>
+        
+        <div class="card p-3 mb-3">
+          <h5><strong>What’s happening</strong></h5>
+          <div class="mb-2">
+            <p class="mb-0 fw-bold">Going Public <span class="text-muted small">LIVE</span></p>
+          </div>
+          <div class="mb-2">
+            <p class="mb-0 fw-bold">🇿🇦 Trending in South Africa</p>
+            <small class="text-muted">35.7K posts</small>
+          </div>
+          <div class="mb-2">
+            <p class="mb-0 fw-bold">Join Now</p>
+            <small class="text-muted">259K posts</small>
+          </div>
+          <div>
+            <p class="mb-0 fw-bold">Farmers</p>
+            <small class="text-muted">90K posts</small>
+          </div>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <h5><strong>Who to Follow</strong></h5>
+
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Thabo_Motsieloa_in_August_2013.jpg/500px-Thabo_Motsieloa_in_August_2013.jpg" class="rounded-circle me-2" alt="User 1" width="40" height="40">
+              <div>
+                <p class="mb-0 fw-bold">Thabo Dlamini</p>
+                <small class="text-muted"></i>@thaboD</small>
+              </div>
+            </div>
+            <button class="btn btn-outline-dark">Follow</button>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Lerato_mbele_2019_4.jpg/500px-Lerato_mbele_2019_4.jpg" class="rounded-circle me-2" alt="User 2" width="40" height="40">
+              <div>
+                <p class="mb-0 fw-bold">Lerato Mokoena</p>
+                <small class="text-muted">@leratoM</small>
+              </div>
+            </div>
+            <button class="btn btn-outline-dark">Follow</button>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Bongani.Bongo.jpg/500px-Bongani.Bongo.jpg" class="rounded-circle me-2" alt="User 3" width="40" height="40">
+              <div>
+                <p class="mb-0 fw-bold">Bongani Sithole</p>
+                <small class="text-muted">@bongzS</small>
+              </div>
+            </div>
+            <button class="btn btn-outline-dark">Follow</button>
+          </div>
+
+          <div class="divider mt-3">Show More</div>
+        </div>
+      </aside>
     </div>
   </div>
 </body>

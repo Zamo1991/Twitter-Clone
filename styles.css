@@ -1,16 +1,18 @@
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
-}
-
-
-body {
-    background-color: white;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
-}
-
-.logo {
+    
+  }
+  
+  /* Logo */
+  .logo {
     height: 30px;
     width: 50px;
     font-weight: 700;
@@ -18,44 +20,149 @@ body {
     margin-top: 30px;
     cursor: pointer;
     margin-left: 50px;
-}
-
-
-nav .nav-link {
+  }
+  
+  
+  
+  /* Sidebar Links */
+  nav .nav-link {
     display: flex;
-    color: black; 
     align-items: center;
     background-color: white;
+    color: black;
     border-radius: 20px;
     margin-left: 40px;
     padding: 10px;
     font-size: 15px;
     cursor: pointer;
-   
-}
-
-nav .nav-link:hover {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  nav .nav-link:hover {
     background-color: rgb(209, 206, 206);
-
-}
-
-.btn-primary {
+  }
+  
+  /* Primary Button (Post) */
+  .btn-primary {
     border-radius: 20px;
-   background-color: black;
-   font: white;
+    background-color: black;
+    color: white;
     cursor: pointer;
-}
-
-.btn-primary:hover {
-    background-color: rgb(41, 40, 40); 
-}
-
-.rounded-circle {
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgb(41, 40, 40);
+  }
+  
+  /* Profile image */
+  .rounded-circle {
     border-radius: 100px;
     cursor: pointer;
-  margin-top: 20px;
-}
+    margin-top: 20px;
+  }
+
+  .verified-badge {
+    color: #1d9bf0;
+    margin-left: 4px;
+    font-size: 14px;
+  }
+  
+  /* Search Input */
+  .search {
+    border-radius: 100px;
+    border: 1px solid #ccc;
+  }
+  
+  /* For You / Following Tabs */
+  .btn-bold,
+  .btn-muted {
+    padding: 16px 0;
+    border: none;
+    background-color: white;
+    width: 100%;
+    font-weight: 500;
+    
+  }
+  
+  .btn-bold:hover,
+  .btn-muted:hover {
+    background-color: rgb(209, 207, 207);
+  }
+  
+  /* Tweet images */
+  .images img {
+    width: 100%;
+    max-width: 800px;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Sidebar Cards */
+  aside .card img {
+    object-fit: cover;
+  }
+
+  aside .card img:hover {
+    background-color: rgb(209, 207, 207);
+  }
+  
+  aside .card button {
+    white-space: nowrap;
+    border-radius: 30px;
+   
+
+  }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .container-fluid,
+  .row {
+    height: 100vh;
+    display: flex;
+  }
+  
+  /* Make left nav scrollable */
+  nav {
+    height: 100vh;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Make main scrollable */
+  main {
+    height: 100vh;
+    overflow-y: auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
  
-.search { 
-    border-radius: 100px;
-}
+  }
+
+  
+  /* Fix right sidebar */
+  aside {
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+  }
+   
+  .d-flex .gap-2{
+    color: rgb(29, 155, 240);
+  }
+ 
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+    }
+  
+    main, aside {
+      padding: 1rem;
+    }
+  }
+  
