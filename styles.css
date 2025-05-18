@@ -28,7 +28,7 @@
   nav .nav-link {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 251, 251);
     color: black;
     border-radius: 20px;
     margin-left: 40px;
@@ -44,11 +44,18 @@
   
   /* Primary Button (Post) */
   .btn-primary {
-    border-radius: 20px;
+    border-radius: 100px;
     background-color: black;
     color: white;
     cursor: pointer;
     border: none;
+    height: 50px;
+
+  }
+
+  .tweet-head-i {
+    color: #1da1f2;
+    margin-left: 5px;
   }
   
   .btn-primary:hover {
@@ -59,7 +66,10 @@
   .rounded-circle {
     border-radius: 100px;
     cursor: pointer;
-    margin-top: 20px;
+  }
+
+  .profile {
+   margin-top: 5rem;
   }
 
   .verified-badge {
@@ -67,12 +77,16 @@
     margin-left: 4px;
     font-size: 14px;
   }
+
   
   /* Search Input */
   .search {
-    border-radius: 100px;
+    border-radius: 50px;
     border: 1px solid #ccc;
   }
+
+ 
+  
   
   /* For You / Following Tabs */
   .btn-bold,
@@ -82,20 +96,43 @@
     background-color: white;
     width: 100%;
     font-weight: 500;
-    
+    font-size: 17px;
+
   }
   
+
   .btn-bold:hover,
   .btn-muted:hover {
     background-color: rgb(209, 207, 207);
   }
+
+  .btn-bold {
+    text-decoration: underline rgb(113, 191, 243); 
+  }
   
+  .tweet {
+    padding: 1rem;
+    border: 1px solid #e6ecf0;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+
+  .tweet:hover {
+    background-color: rgb(236, 233, 233)
+   }
+  
+ .tweet-text {
+    padding: 1rem;
+    border: 1px solid #e6ecf0;
+    border-radius: 12px;
+    background-color: #fff;
+ }
+
   /* Tweet images */
   .images img {
-    width: 100%;
-    max-width: 800px;
-    margin-right: 10px;
-    border-radius: 8px;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 0.5rem;
   }
   
   /* Sidebar Cards */
@@ -103,29 +140,25 @@
     object-fit: cover;
   }
 
-  aside .card img:hover {
-    background-color: rgb(209, 207, 207);
-  }
+  
   
   aside .card button {
     white-space: nowrap;
-    border-radius: 30px;
-   
-
+   border-radius: 30px;
+   background-color: #1d9bf0;
   }
+  
 
-  html, body {
-    height: 100%;
-    overflow: hidden;
-  }
+ 
   
   .container-fluid,
   .row {
     height: 100vh;
     display: flex;
+    
   }
   
-  /* Make left nav scrollable */
+  
   nav {
     height: 100vh;
     overflow: hidden;
@@ -133,28 +166,60 @@
     top: 0;
   }
   
-  /* Make main scrollable */
+  
   main {
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: scroll;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
  
   }
 
+  .hoverable-item:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  .hoverable-item {
+    transition: background-color 0.2s ease;
+  }
   
-  /* Fix right sidebar */
+  
+  .divider {
+    text-align: center;
+    color: #1da1f2;
+    font-weight: bold;
+    cursor: pointer;
+    border: 5rem  #e6ecf0;
+  }
+
+  .divider:hover {
+   background-color: rgb(209, 207, 207)
+  }
+  
+
   aside {
     height: 100vh;
     overflow-y: auto;
     position: relative;
   }
-   
-  .d-flex .gap-2{
-    color: rgb(29, 155, 240);
-  }
- 
 
+  .footer {
+    font-size: 13px;
+    color: #657786;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-link {
+    color: #657786;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+    color: #989b9c;
+  }
+  
+  
   /* Responsive Adjustments */
   @media (max-width: 768px) {
     nav {

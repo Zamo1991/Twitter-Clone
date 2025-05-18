@@ -33,9 +33,10 @@
         <a class="nav-link" href="#"><i class="bi bi-people me-2"></i>Communities</a>
         <a class="nav-link" href="#"><i class="bi bi-person me-2"></i>Profile</a>
         <a class="nav-link" href="#"><i class="bi bi-three-dots me-2"></i>More</a>
-        <button class="btn btn-primary mt-3 w-100">Post</button>
+        <button class="btn btn-primary mt-3 w-100 fs-5">Post</button>
 
         <!-- Profile -->
+         <div class="profile"></div>
         <div class="d-flex align-items-center mt-4">
           <img src="./assets/20221114_101344.jpg" class="rounded-circle me-2" alt="profile" width="40" height="40" />
           <div>
@@ -56,13 +57,14 @@
           </button>
         </div>
         
+        <div class="tweet-text">
         <div class="d-flex align-items-start mb-3">
           <img src="./assets/20221114_101344.jpg" class="rounded-circle me-2" alt="profile" width="40" height="40" />  
           <div class="flex-grow-1">
             <textarea class="form-control border-0" rows="3" placeholder="What's happening?"></textarea>
             
             <div class="d-flex justify-content-between align-items-center mt-2">
-              <small class="text-muted"><i class="bi bi-globe-central-south-asia-fill"></i></small>
+              
               <div class="d-flex gap-2">
                 <a class="nav-link" href="#"><i class="bi bi-image me-2"></i></a>
                 <a class="nav-link" href="#"><i class="bi bi-filetype-gif me-2"></i></a>
@@ -71,13 +73,17 @@
                 <a class="nav-link" href="#"><i class="bi bi-emoji-smile me-2"></i></a>
                 <a class="nav-link" href="#"><i class="bi bi-calendar-event me-2"></i></a>
                 <a class="nav-link" href="#"><i class="bi bi-geo-alt me-2"></i></a>
+                
               </div>
-              <button type="button" class="btn btn-primary">Post</button>
+              <div class="post-btn">
+              <button class="btn btn-primary rounded-pill px-4 fs-5">Post</button>
+            </div>
             </div>
           </div>
         </div>
-
-        <div class="divider mb-3">Show 70 posts</div>
+      </div>
+      
+        <div class="divider mb-3">Show 1254 posts</div>
 
         <div class="tweet mb-4">
           <div class="tweet-header">
@@ -104,77 +110,103 @@
       </main>
 
       <!-- Right Sidebar -->
-      <aside class="col-md-3 p-4">
-        <div class="input-group mb-3 rounded-pill overflow-hidden">
-          <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
-          <input type="text" class="form-control border-start-0" placeholder="Search" aria-label="Search">
-        </div>
+<aside class="col-md-3 p-4">
+  <div class="input-group mb-4">
+    <span class="input-group-text bg-white border-end-0 rounded-start-pill">
+      <i class="bi bi-search"></i>
+    </span>
+    <input type="text"
+           class="form-control border-start-0 rounded-end-pill"
+           placeholder="Search"
+           aria-label="Search"/>
+  </div>
+  
+  <div class="card p-3 mb-3">
+    <h5><strong>Subscribe to Premium</strong></h5>
+    <p>Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+    <button class="btn btn-primary rounded-pill px-4 fs-5">Subscribe</button>
+  </div>
+  
         
-        <div class="card p-3 mb-3">
-          <h5><strong>Subscribe to Premium</strong></h5>
-          <p>Subscribe to unlock new features and, if eligible, receive a share of revenue.</p>
-          <button class="btn btn-primary btn-sm">Subscribe</button>
-        </div>
-        
-        <div class="card p-3 mb-3">
-          <h5><strong>What’s happening</strong></h5>
-          <div class="mb-2">
-            <p class="mb-0 fw-bold">Going Public <span class="text-muted small">LIVE</span></p>
-          </div>
-          <div class="mb-2">
-            <p class="mb-0 fw-bold">🇿🇦 Trending in South Africa</p>
-            <small class="text-muted">35.7K posts</small>
-          </div>
-          <div class="mb-2">
-            <p class="mb-0 fw-bold">Join Now</p>
-            <small class="text-muted">259K posts</small>
-          </div>
-          <div>
-            <p class="mb-0 fw-bold">Farmers</p>
-            <small class="text-muted">90K posts</small>
-          </div>
-        </div>
-
-        <div class="card p-3 mb-3">
-          <h5><strong>Who to Follow</strong></h5>
-
-          <div class="d-flex align-items-center justify-content-between mb-3">
-            <div class="d-flex align-items-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Thabo_Motsieloa_in_August_2013.jpg/500px-Thabo_Motsieloa_in_August_2013.jpg" class="rounded-circle me-2" alt="User 1" width="40" height="40">
-              <div>
-                <p class="mb-0 fw-bold">Thabo Dlamini</p>
-                <small class="text-muted"></i>@thaboD</small>
-              </div>
-            </div>
-            <button class="btn btn-outline-dark">Follow</button>
-          </div>
-
-          <div class="d-flex align-items-center justify-content-between mb-3">
-            <div class="d-flex align-items-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Lerato_mbele_2019_4.jpg/500px-Lerato_mbele_2019_4.jpg" class="rounded-circle me-2" alt="User 2" width="40" height="40">
-              <div>
-                <p class="mb-0 fw-bold">Lerato Mokoena</p>
-                <small class="text-muted">@leratoM</small>
-              </div>
-            </div>
-            <button class="btn btn-outline-dark">Follow</button>
-          </div>
-
-          <div class="d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Bongani.Bongo.jpg/500px-Bongani.Bongo.jpg" class="rounded-circle me-2" alt="User 3" width="40" height="40">
-              <div>
-                <p class="mb-0 fw-bold">Bongani Sithole</p>
-                <small class="text-muted">@bongzS</small>
-              </div>
-            </div>
-            <button class="btn btn-outline-dark">Follow</button>
-          </div>
-
-          <div class="divider mt-3">Show More</div>
-        </div>
-      </aside>
+  <div class="card p-3 mb-3">
+    <h5><strong>What’s happening</strong></h5>
+  
+    <div class="hoverable-item mb-2 p-2 rounded">
+      <p class="mb-1 fw-bold">Going Public<span class="text-muted small">LIVE</span><i class="bi bi-three-dots p-5"></i></p>
+    </div>
+  
+    <div class="hoverable-item mb-2 p-2 rounded">
+      <p class="mb-0 fw-bold">🇿🇦 Trending in South Africa<i class="bi bi-three-dots p-3"></i></p>
+      <small class="text-muted">35.7K posts</small>
+    </div>
+  
+    <div class="hoverable-item mb-2 p-2 rounded">
+      <p class="mb-0 fw-bold">Join Now<i class="bi bi-three-dots p-5"></i></p>
+      <small class="text-muted">259K posts</small>
+    </div>
+  
+    <div class="hoverable-item p-2 rounded">
+      <p class="mb-0 fw-bold">Farmers<i class="bi bi-three-dots p-5"></i></p>
+      <small class="text-muted">90K posts</small>
     </div>
   </div>
+  
+
+  <div class="card p-3 mb-3">
+    <h5><strong>Who to Follow</strong></h5>
+  
+    <div class="hoverable-item d-flex align-items-center justify-content-between mb-3 p-2 rounded">
+      <div class="d-flex align-items-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Thabo_Motsieloa_in_August_2013.jpg/500px-Thabo_Motsieloa_in_August_2013.jpg" class="rounded-circle me-2" alt="User 1" width="40" height="40">
+        <div>
+          <p class="mb-0 fw-bold">Thabo Dlamini</p>
+          <small class="text-muted">@thaboD</small>
+        </div>
+      </div>
+      <button class="btn btn-dark">Follow</button>
+    </div>
+  
+    <div class="hoverable-item d-flex align-items-center justify-content-between mb-3 p-2 rounded">
+      <div class="d-flex align-items-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Lerato_mbele_2019_4.jpg/500px-Lerato_mbele_2019_4.jpg" class="rounded-circle me-2" alt="User 2" width="40" height="40">
+        <div>
+          <p class="mb-0 fw-bold">Lerato Mokoena</p>
+          <small class="text-muted">@leratoM</small>
+        </div>
+      </div>
+      <button class="btn btn-dark">Follow</button>
+    </div>
+  
+    <div class="hoverable-item d-flex align-items-center justify-content-between p-2 rounded">
+      <div class="d-flex align-items-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Bongani.Bongo.jpg/500px-Bongani.Bongo.jpg" class="rounded-circle me-2" alt="User 3" width="40" height="40">
+        <div>
+          <p class="mb-0 fw-bold">Bongani Sithole</p>
+          <small class="text-muted">@bongzS</small>
+        </div>
+      </div>
+      <button class="btn btn-dark">Follow</button>
+    </div>
+  
+    <div class="divider mt-3">Show More</div> 
+  </div>
+  <footer class="footer text-muted small mt-4 px-3">
+    <div class="d-flex flex-wrap gap-2">
+      <a href="#" class="footer-link">Terms of Service</a>
+      <span>|</span>
+      <a href="#" class="footer-link">Privacy Policy</a>
+      <span>|</span>
+      <a href="#" class="footer-link">Cookie Policy</a>
+      <span>|</span>
+      <a href="#" class="footer-link">More</a>
+    </div>
+    <div class="mt-2">© 2025 X Corp.</div>
+  </footer>
+  </aside>
+  
+ </div>
+ 
+  </div>
+  
 </body>
 </html>
